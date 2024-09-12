@@ -21,9 +21,7 @@ public class UserService {
     private KafkaProducerService kafkaProducerService;
 
     public UserLoginContext registerEmployee(RegistrationData registrationData) {
-        UserEntity userEntity = userRepository.save(new UserEntity(registrationData, Role.EMPLOYEE));
-        kafkaProducerService.sendUser(userEntity.getLogin(), new UserData(userEntity));
-        return new UserLoginContext(userEntity);
+        return new UserLoginContext(userRepository.save(new UserEntity(registrationData, Role.EMPLOYEE)));
     }
 
     public UserLoginContext registerEmployer(RegistrationData registrationData) {
