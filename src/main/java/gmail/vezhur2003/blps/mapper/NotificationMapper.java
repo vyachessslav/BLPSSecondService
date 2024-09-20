@@ -14,7 +14,7 @@ public class NotificationMapper {
             sb.append("</h4>\n");
             sb.append("<blockquote>\n");
             for (NotificationData notification : notificationListByTag) {
-                sb.append(notificationListByTag.get(0).getTag());
+                sb.append(notification.getName());
                 sb.append("<br>\n");
             }
             sb.append("</blockquote>\n");

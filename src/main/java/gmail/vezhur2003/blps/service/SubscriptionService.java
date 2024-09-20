@@ -48,7 +48,7 @@ public class SubscriptionService {
             ArrayList<ArrayList<NotificationData>> notificationsByEmailList = new ArrayList<>();
             for (String tag: subscriptionRepository.findTagsByEmail(email)) {
                 ArrayList<NotificationData> notificationsByTagList = new ArrayList<>();
-                for (String name: vacancyRepository.findNotifications(tag)) {
+                for (String name: vacancyRepository.findVacancy(tag)) {
                     notificationsByTagList.add(new NotificationData(email, tag, name));
                 }
                 if (!notificationsByTagList.isEmpty()) {

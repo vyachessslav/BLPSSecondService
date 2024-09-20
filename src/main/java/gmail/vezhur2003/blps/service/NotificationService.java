@@ -25,10 +25,10 @@ public class NotificationService {
     @Value(value = "${spring.mail.username}")
     private String from;
 
+    //@Scheduled(cron = "0 0 */2 * * *")
     @Scheduled(fixedRate = 30000)
     @Async
     public void sendNotifications() {
-        System.out.println("0000000000000000000000000000000000000000000");
         ArrayList<ArrayList<ArrayList<NotificationData>>> notificationList = subscriptionService.getNotifications();
         if (!notificationList.isEmpty()) {
             for (ArrayList<ArrayList<NotificationData>> notificationListByEmail : notificationList) {
@@ -42,7 +42,6 @@ public class NotificationService {
 
     public void sendEmail(String toEmail, String subject, String body) {
         try {
-            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             helper.setTo(toEmail);
@@ -51,7 +50,6 @@ public class NotificationService {
             helper.setText(body, true);
             mailSender.send(message);
             log.info("Email sent to {} successfully", toEmail);
-            System.out.println("1111111111111111111111111111111111111111111111");
         } catch (MessagingException e) {
             throw new RuntimeException(e.getMessage());
         }

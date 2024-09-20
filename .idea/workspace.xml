@@ -4,49 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6868d6-228b-4880-804c-5c589c6cb240" name="Changes" comment="кафка рабочая">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/NotificationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/SubscriptionData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/SubscribeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/SubscriptionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/mapper/NotificationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/SubscriptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8e6868d6-228b-4880-804c-5c589c6cb240" name="Changes" comment="лаб 3 только пока не работает почта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/BlpsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/BlpsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/ManyVacanciesContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/RegistrationData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserLoginContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaConsumerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaProducerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/PrimaryDataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecondaryDataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/VacancyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/primary/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/primary/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/secondary/VacancyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/VacancyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/secondary/VacancyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/VacancyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasAuthorityGranter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasAuthorityGranter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasLoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasLoginModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaProducerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/VacancyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/mapper/NotificationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/mapper/NotificationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/VacancyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/VacancyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/SubscriptionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +79,7 @@
       <workItem from="1726313552812" duration="1966000" />
       <workItem from="1726395402407" duration="18018000" />
       <workItem from="1726526717316" duration="26517000" />
-      <workItem from="1726767385041" duration="3064000" />
+      <workItem from="1726767385041" duration="10577000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1726148644221</created>
@@ -138,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726153305209</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="лаб 3 только пока не работает почта">
+      <created>1726830463640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726830463640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +132,7 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="кафка" />
     <MESSAGE value="кафка рабочая" />
-    <option name="LAST_COMMIT_MESSAGE" value="кафка рабочая" />
+    <MESSAGE value="лаб 3 только пока не работает почта" />
+    <option name="LAST_COMMIT_MESSAGE" value="лаб 3 только пока не работает почта" />
   </component>
 </project>
