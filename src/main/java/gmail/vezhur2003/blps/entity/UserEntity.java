@@ -1,6 +1,5 @@
-package gmail.vezhur2003.blps.primary;
+package gmail.vezhur2003.blps.entity;
 
-import gmail.vezhur2003.blps.DTO.RegistrationData;
 import gmail.vezhur2003.blps.security.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -24,10 +23,4 @@ public class UserEntity {
 
     @Column(nullable = false)
     private Role role;
-
-    public UserEntity(RegistrationData registrationData, Role role) {
-        login = registrationData.getLogin();
-        password = registrationData.getPassword();
-        this.role = role;
-    }
 }

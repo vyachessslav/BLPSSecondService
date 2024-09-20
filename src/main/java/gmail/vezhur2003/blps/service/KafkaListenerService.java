@@ -1,11 +1,10 @@
 package gmail.vezhur2003.blps.service;
 
-import gmail.vezhur2003.blps.DTO.UserData;
 import gmail.vezhur2003.blps.DTO.VacancyData;
-import gmail.vezhur2003.blps.primary.UserEntity;
-import gmail.vezhur2003.blps.primary.UserRepository;
-import gmail.vezhur2003.blps.secondary.VacancyEntity;
-import gmail.vezhur2003.blps.secondary.VacancyRepository;
+import gmail.vezhur2003.blps.entity.UserEntity;
+import gmail.vezhur2003.blps.repository.UserRepository;
+import gmail.vezhur2003.blps.entity.VacancyEntity;
+import gmail.vezhur2003.blps.repository.VacancyRepository;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -21,8 +20,7 @@ public class KafkaListenerService {
 
     private final UserRepository userRepository;
     private final VacancyRepository vacancyRepository;
-    private final UserService userService;
-    private final VacancyService vacancyService;
+
 
     @KafkaListener(topics = "${spring.kafka.topics.user}",
             groupId = "spring.kafka.consumer.group-id", containerFactory = "userListenerContainerFactory")
@@ -31,10 +29,10 @@ public class KafkaListenerService {
         userRepository.save(userEntity);
     }
 
-    @KafkaListener(topics = "${spring.kafka.topics.issue}",
-            groupId = "spring.kafka.consumer.group-id", containerFactory = "issueListenerContainerFactory")
-    public void issuesListener(@Payload VacancyEntity vacancyEntity) {
-        System.out.println("received message: " + vacancyEntity);
-        vacancyRepository.save(vacancyEntity);
+    @KafkaListener(topics = "${spring.kafka.topics.vacancy}",
+            groupId = "spring.kafka.consumer.group-id", containerFactory = "vacancyListenerContainerFactory")
+    public void issuesListener(@Payload VacancyData vacancyData) {
+        System.out.println("received message: " + vacancyData);
+        vacancyRepository.save(new VacancyEntity(vacancyData, true));
     }
 }

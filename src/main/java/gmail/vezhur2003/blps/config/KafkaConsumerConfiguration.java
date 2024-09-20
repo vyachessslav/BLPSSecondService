@@ -1,9 +1,8 @@
 package gmail.vezhur2003.blps.config;
 
-import gmail.vezhur2003.blps.DTO.UserData;
 import gmail.vezhur2003.blps.DTO.VacancyData;
-import gmail.vezhur2003.blps.primary.UserEntity;
-import gmail.vezhur2003.blps.secondary.VacancyEntity;
+import gmail.vezhur2003.blps.entity.UserEntity;
+import gmail.vezhur2003.blps.entity.VacancyEntity;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.LongDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -48,7 +47,7 @@ public class KafkaConsumerConfiguration {
         Map<String, Object> props = consumerConfigs();
         props.put(JsonDeserializer.KEY_DEFAULT_TYPE, "String");
         props.put(ErrorHandlingDeserializer.KEY_DESERIALIZER_CLASS, StringDeserializer.class);
-        props.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "gmail.vezhur2003.blps.primary.UserEntity");
+        props.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "gmail.vezhur2003.blps.entity.UserEntity");
         props.put(ErrorHandlingDeserializer.VALUE_DESERIALIZER_CLASS, JsonDeserializer.class);
         return props;
     }
@@ -71,19 +70,19 @@ public class KafkaConsumerConfiguration {
         Map<String, Object> props = consumerConfigs();
         props.put(JsonDeserializer.KEY_DEFAULT_TYPE, "Long");
         props.put(ErrorHandlingDeserializer.KEY_DESERIALIZER_CLASS, LongDeserializer.class);
-        props.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "gmail.vezhur2003.blps.secondary.VacancyEntity");
+        props.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "gmail.vezhur2003.blps.DTO.VacancyData");
         props.put(ErrorHandlingDeserializer.VALUE_DESERIALIZER_CLASS, JsonDeserializer.class);
         return props;
     }
 
     @Bean
-    public ConsumerFactory<Long, VacancyEntity> vacancyConsumerFactory() {
+    public ConsumerFactory<Long, VacancyData> vacancyConsumerFactory() {
         return new DefaultKafkaConsumerFactory<>(vacancyConsumerConfigs());
     }
 
     @Bean
-    public KafkaListenerContainerFactory<?> issueListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<Long, VacancyEntity> factory =
+    public KafkaListenerContainerFactory<?> vacancyListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<Long, VacancyData> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(vacancyConsumerFactory());
         return factory;

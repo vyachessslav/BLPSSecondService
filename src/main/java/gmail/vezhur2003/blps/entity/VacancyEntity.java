@@ -1,5 +1,6 @@
-package gmail.vezhur2003.blps.secondary;
+package gmail.vezhur2003.blps.entity;
 
+import gmail.vezhur2003.blps.DTO.VacancyData;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -47,4 +48,22 @@ public class VacancyEntity {
 
     @Column(nullable = false)
     private Long userId;
+
+    @Column(nullable = false)
+    private Boolean isNew;
+
+    public VacancyEntity(VacancyData vacancy, Boolean isNew) {
+        this.setId(vacancy.getId());
+        this.setTopic((vacancy.getTopic()));
+        this.setName(vacancy.getName());
+        this.setConfirmation(vacancy.getConfirmation());
+        this.setSalary(vacancy.getSalary());
+        this.setLocation(vacancy.getLocation());
+        this.setCompany(vacancy.getCompany());
+        this.setContact(vacancy.getContact());
+        this.setShortDescription(vacancy.getShortDescription());
+        this.setLongDescription(vacancy.getLongDescription());
+        this.setUserId(vacancy.getUserId());
+        this.setIsNew(isNew);
+    }
 }

@@ -1,5 +1,6 @@
-package gmail.vezhur2003.blps.primary;
+package gmail.vezhur2003.blps.repository;
 
+import gmail.vezhur2003.blps.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.DefaultAuthenticationEventPublisher;
 import org.springframework.security.authentication.jaas.AbstractJaasAuthenticationProvider;
+import org.springframework.security.authentication.jaas.DefaultJaasAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -17,7 +19,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfiguration {
-    private final AbstractJaasAuthenticationProvider jaasAuthenticationProvider;
 
     @Value(value = "${api.endpoints.base-url}")
     private String baseUrl;
@@ -25,15 +26,11 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .authenticationProvider(jaasAuthenticationProvider)
                 .csrf(AbstractHttpConfigurer::disable)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin))
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers(baseUrl + "/vacancy/unconfirmed").hasAuthority("ADMIN")
-                        .requestMatchers(baseUrl + "/vacancy/confirmation").hasAuthority("ADMIN")
-                        .requestMatchers(baseUrl + "/vacancy/creating").hasAuthority("EMPLOYER")
-                        .requestMatchers(HttpMethod.DELETE,baseUrl + "/vacancy/*").hasAuthority("EMPLOYER")
-                        .anyRequest().permitAll()
+                        .requestMatchers(baseUrl + "/subscription")
+                        .permitAll()
                 )
                 .httpBasic(Customizer.withDefaults())
                 .build();

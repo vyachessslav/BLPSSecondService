@@ -1,9 +1,7 @@
 package gmail.vezhur2003.blps.security;
 
-import gmail.vezhur2003.blps.primary.UserEntity;
-import gmail.vezhur2003.blps.primary.UserRepository;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import gmail.vezhur2003.blps.entity.UserEntity;
+import gmail.vezhur2003.blps.repository.UserRepository;
 
 import javax.security.auth.Subject;
 import javax.security.auth.callback.*;

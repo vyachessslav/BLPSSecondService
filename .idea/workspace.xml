@@ -4,11 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6868d6-228b-4880-804c-5c589c6cb240" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaConsumerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaListenerService.java" afterDir="false" />
+    <list default="true" id="8e6868d6-228b-4880-804c-5c589c6cb240" name="Changes" comment="кафка рабочая">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/NotificationData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/SubscriptionData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/SubscribeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/SubscriptionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/mapper/NotificationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/SubscriptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/SubscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/BlpsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/BlpsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/ManyVacanciesContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/RegistrationData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/UserLoginContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/DTO/VacancyData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaConsumerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/KafkaProducerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/PrimaryDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecondaryDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/controller/VacancyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/primary/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/primary/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/secondary/VacancyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/entity/VacancyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/secondary/VacancyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/repository/VacancyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasAuthorityGranter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasAuthorityGranter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasLoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/security/JaasLoginModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaListenerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/KafkaProducerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gmail/vezhur2003/blps/service/VacancyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +75,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/vezhu/IdeaProjects/blps-lab1-second",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vezhu/IdeaProjects/blps-lab-1-master&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3c12ed188905a699ee556b46e5ddeba1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BlpsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="blps-lab1-second" />
@@ -68,7 +110,12 @@
       <option name="presentableId" value="Default" />
       <updated>1726147355223</updated>
       <workItem from="1726147358224" duration="66000" />
-      <workItem from="1726147561828" duration="4022000" />
+      <workItem from="1726147561828" duration="14080000" />
+      <workItem from="1726240766857" duration="16241000" />
+      <workItem from="1726313552812" duration="1966000" />
+      <workItem from="1726395402407" duration="18018000" />
+      <workItem from="1726526717316" duration="26517000" />
+      <workItem from="1726767385041" duration="3064000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1726148644221</created>
@@ -84,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726148751372</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="кафка">
+      <created>1726153305209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726153305209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +159,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="кафка" />
+    <MESSAGE value="кафка рабочая" />
+    <option name="LAST_COMMIT_MESSAGE" value="кафка рабочая" />
   </component>
 </project>
